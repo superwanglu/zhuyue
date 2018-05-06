@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>CUCN</title>
+<!-- Tell the browser to be responsive to screen width -->
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+<script src="jquery.js"></script>		
+<style type="text/css">
+#mybody {
+		background: url(picture/all/line.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+</style>
+	
+</head>
+<body id="mybody">
+
+
+	<img src="gif/left.gif" id="p1" alt="a1" width="60%" style="z-index:-1;bottom:-20px;right:-20px;position:absolute;display:none">
+	
+	<img src="gif/line.gif" id="p2" alt="a2" width="100%" style="z-index:-2;bottom:-120px;right:-90px;position:absolute;display:none">
+	
+	<div id="div1" style="width:6%;height:3%;left:30%;bottom:52%;position:absolute;">
+	</div>
+	<div id="div2" style="width:6%;height:3%;left:57%;bottom:55%;position:absolute;">
+	</div>
+	<div id="div3" style="width:6%;height:3%;left:67%;bottom:59%;position:absolute;">
+	</div>
+	<div id="div21" style="width:6%;height:3%;left:20%;bottom:36.5%;position:absolute;">
+	</div>
+	<div id="div12" style="width:6%;height:3%;left:48%;bottom:45.6%;position:absolute;">
+	</div>
+	<div id="div13" style="width:6%;height:3%;left:62%;bottom:41.2%;position:absolute;">
+	</div>
+	<div id="div4" style="width:6%;height:3%;left:79%;bottom:47%;position:absolute;">
+	</div>
+	<div id="div41" style="width:6%;height:3%;left:31%;bottom:17%;position:absolute;">
+	</div>
+	<div id="div31" style="width:6%;height:3%;left:45%;bottom:21.6%;position:absolute;">
+	</div>
+	<div id="div32" style="width:6%;height:3%;left:73%;bottom:38.2%;position:absolute;">
+	</div>
+	<div id="div5" style="width:6%;height:3%;left:62%;bottom:27.3%;position:absolute;">
+	</div>
+
+</body>
+
+<script>
+var image=document.getElementById("p1");
+setTimeout(function(){image.style.display="inline";},1000);
+var images=document.getElementById("p2");
+setTimeout(function(){images.style.display="inline";},1000);
+$('#div1,#div12,#div13').click(function(e){
+	window.location.href='study.html';        
+});
+$('#div2,#div21').click(function(e){
+	window.location.href='play.html';        
+});
+$('#div3,#div31,#div32').click(function(e){
+	window.location.href='view.html';        
+});
+$('#div4,#div41').click(function(e){
+	window.location.href='eat.html';        
+});
+$('#div5').click(function(e){
+	window.location.href='live.html';        
+});
+
+</script>
+
+</html>

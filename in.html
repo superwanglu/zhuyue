@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>CUCN</title>
+<!-- Tell the browser to be responsive to screen width -->
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+<script src="jquery.js"></script>		
+<style type="text/css">
+#mybody {
+		background: url(picture/all/in.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+</style>
+	
+</head>
+<body id="mybody">
+
+
+	<img src="gif/jingtanhao.gif" id="p1" alt="a1" width="80%" style="top:10px;right:-40px;position:absolute;display:none">
+	
+	<img src="gif/gogogo.gif" id="p2" alt="a2" width="100%" style="bottom:-130px;right:-20px;position:absolute;display:none">
+
+</body>
+
+<script>
+var image=document.getElementById("p1");
+setTimeout(function(){image.style.display="inline";},1000);
+
+var images=document.getElementById("p2");
+setTimeout(function(){images.style.display="inline";},1000);
+$('#p2').click(function(e){
+	window.location.href='line.html';        
+});
+</script>
+
+</html>
