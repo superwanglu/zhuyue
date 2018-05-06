@@ -24,28 +24,15 @@
 </style>
 	
 </head>
-<body id="mybody">
-
-	
+<body id="mybody">	
 	<img src="gif/post.gif"  alt="a1" width="100%" style="z-index:2">
-
-	
-	
-	
-	<img src="gif/right.gif" id="p2" alt="a2" width="100%" style="bottom:-100px;right:-50px;z-index:1;position:absolute;display:none">
-
-	
-	
-	
-		
-	
-
+	<img src="gif/right.gif" id="p2" alt="a2" width="100%" style="top:400px;right:-50px;z-index:1;position:absolute;display:none">
 </body>
 
 <script>
 
 var images=document.getElementById("p2");
-setTimeout(function(){images.style.display="inline";},2000);
+setTimeout(function(){images.style.display="inline";},4000);
 $('#p2').click(function(e){
 	window.location.href='question.html';        
 });
